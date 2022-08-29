@@ -1,0 +1,41 @@
+<!--pages/songDetail/songDetail.wxml-->
+<view class="songDetailContainer">
+  <view class="songInfo">
+    <text>{{song.name}}</text>
+    <text>{{song.ar[0].name}}</text>
+  </view>
+  <view class="songContainer">
+    <view class="songContainerRotate {{isPlay && 'discAnimation'}}">
+      <image src="../../static/images/songDetail/disc.png">
+        <image class="userImg" src="{{song.al.picUrl}}"></image>
+      </image>
+    </view>
+  </view>
+  <view class="footer">
+    <view class="songOpertor">
+      <text class="iconfont icon-xihuan"></text>
+      <text class="iconfont icon-biaoxing"></text>
+      <text class="iconfont icon-xinxi"></text>
+      <text class="iconfont icon-xiazai"></text>
+      <text class="iconfont icon-gengduo"></text>
+    </view>
+    <view class="songProgress">
+      <text>{{currentTime}}</text>
+      <view class="barControl">
+        <!-- 进度条 -->
+        <view class="audio-currentTime-bar" style="width: {{currentWidth + 'rpx'}};">
+          <!-- 小圆球 -->
+          <view class="audio-circle"></view>
+        </view>
+      </view>
+      <text>{{durationTime}}</text>
+    </view>
+    <view class="songSwitch">
+      <text class="iconfont icon-24gl-repeatOnce2"></text>
+      <text class="iconfont icon-shangyishoushangyige" id="pre" bindtap="handleSwitch"></text>
+      <text class="iconfont {{isPlay ? 'icon-zanting1' : 'icon-bofang'}} stop" bindtap="handlerMusicPlay"></text>
+      <text class="iconfont icon-xiayigexiayishou" id="next" bindtap="handleSwitch"></text>
+      <text class="iconfont icon-gedan"></text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/recommentSong/recommentSong",
+    "pages/songDetail/songDetail",
+    "pages/video/video",
+    "pages/personal/personal",
+    "pages/login/login",
+    "pages/search/search"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ec4141",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "树洞云音乐",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "selectedColor": "#ec4141",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "发现",
+        "iconPath": "/static/tabImages/home (1).png",
+        "selectedIconPath": "/static/tabImages/home (2).png"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "text": "播客",
+        "iconPath": "/static/tabImages/video (1).png",
+        "selectedIconPath": "/static/tabImages/video (2).png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "我的",
+        "iconPath": "/static/tabImages/my (1).png",
+        "selectedIconPath": "/static/tabImages/my (2).png"
+      }
+    ]
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ]
+}
